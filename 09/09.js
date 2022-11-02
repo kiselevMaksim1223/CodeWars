@@ -1,5 +1,5 @@
 function padIt(str, n) {
-    let i = 0;
+    /*let i = 0;
     let res = [];
     let s = '*'
     res.push(str);
@@ -12,5 +12,14 @@ function padIt(str, n) {
         }
     }
     res.toString();
-    return res.join('');
+    return res.join('');*/
+    while (n > 0) {
+        if (n%2===0) { 
+            str = str + "*";
+        } else {
+            str = "*" + str;
+        }
+        n--;
+    }
+    return str;
 }
