@@ -5,20 +5,12 @@ function padIt(str, n) {
     res.push(str);
     while (i < n) {
         i++;
-        switch (i){
-            case 1:
-            res.unshift(s);
-            break;
-            case 3:
-            res.unshift(s);
-            break;
-            case 5:
-            res.unshift(s);
-            break;
-            default:
+        if (i % 2 === 0) {
             res.push(s);
+        } else {
+            res.unshift(s);
         }
-    }    
+    }
     res.toString();
     return res.join('');
 }
