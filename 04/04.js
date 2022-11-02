@@ -1,3 +1,4 @@
+let arr = [1,2,3]
 function getLength(arr){
     //return length of arr
     return arr.length;
@@ -14,7 +15,7 @@ function getLength(arr){
     var el=1;
     //push el to arr
     
-    return arr.push(el1);
+    return arr.push(el);
   }
   function popElement(arr){
     //pop an element from arr
