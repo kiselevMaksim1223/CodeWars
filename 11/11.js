@@ -1,14 +1,14 @@
 function grabDoll(dolls) {
     var bag = [];
     for (var i = 0; i < dolls.length; i++) {
-         if (dolls[i] === "Mickey Mouse" && bag.length < 3) { 
-            bag.push(dolls[i]);
+        if (bag.length >= 3) { 
+            break;
         }
-         else if (dolls[i] === "Hello Kitty" && bag.length < 2) {
+         else if (dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll") { 
             bag.push(dolls[i]);
-        // } else if (bag.length < 2) {
-        //     continue;
-        } else break;
+                } 
+            continue;
+        
     }
     return bag;
 }
